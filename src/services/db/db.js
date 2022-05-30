@@ -21,22 +21,3 @@ const setUpServer = (server) => {
 };
 
 module.exports = { setUpServer };
-// const configEnv = require('./config/env/config');
-// const env = configEnv();
-// const { MongoClient, ServerApiVersion } = require('mongodb');
-
-// const uri =
-//   env.URI ||
-//   'mongodb+srv://admin:AwoCbFhrcj5RsGyW@todo-api-clouster.q78venw.mongodb.net/?retryWrites=true&w=majority';
-
-// const client = new MongoClient(uri, {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-//   serverApi: ServerApiVersion.v1,
-// });
-
-// client.connect((err) => {
-//   const collection = client.db('test').collection('devices');
-//   // perform actions on the collection object
-//   client.close();
-// });
