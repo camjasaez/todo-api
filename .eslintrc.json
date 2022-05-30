@@ -1,0 +1,21 @@
+{
+    "env": {
+      "commonjs": true,
+      "es2021": true,
+      "node": true
+    },
+    "extends": ["eslint:recommended", "google", "prettier"],
+    "parserOptions": {
+      "ecmaVersion": "latest"
+    },
+    "rules": {
+      "new-cap": 0,
+      "max-len": [
+        "error",
+        {
+          "code": 100
+        }
+      ],
+      "valid-jsdoc": 0
+    }
+  }
