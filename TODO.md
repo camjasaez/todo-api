@@ -8,3 +8,4 @@
 - Remove todo
 - Update todo
 - Create todo
+- update README
