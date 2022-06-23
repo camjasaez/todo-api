@@ -1,5 +1,6 @@
 const { setUpServer } = require('./services/db/db');
 
+const cors = require('cors');
 const express = require('express');
 const server = express();
 
@@ -7,7 +8,8 @@ const server = express();
 const router = require('./api/routes/router');
 
 server.use(express.json());
-server.use('/api', router);
+server.use(cors());
+server.use('/api/v1', router);
 
 setUpServer(server);
 
